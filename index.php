@@ -1,1 +1,1 @@
-<?php header('location: ./src/pages/user/teste.php') ?>
+<?php header('location: ./src/pages/user/list.users.php') ?>

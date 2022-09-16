@@ -6,5 +6,5 @@ $db_port = 5432;
 $db_user = 'postgres';
 $db_password = 'postgres';
 
-$dsn = "pgsql:host=$db_host, port=$db_port, dbname=$db_name";
+$dsn = "pgsql:host=$db_host; port=$db_port; dbname=$db_name;";
 
