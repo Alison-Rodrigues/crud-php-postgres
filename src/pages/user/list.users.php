@@ -6,24 +6,12 @@
 ?>
 
 
-<table class="table">
-    <thead>
-        <tr>
-            <th>Nome</th>
-            <th>Cpf</th>
-            <th>Tel</th>
-        </tr>
-    </thead>
+<main class="card-container">
     <?php foreach($users as $user): ?>
-    <tbody>
-        
-        <tr>
-            <td><?=$user['nome'] ?></td>
-            <td><?=$user['cpf'] ?></td>
-            <td><?=$user['tel'] ?></td>
-            
-            </tr>
-        
-    </tbody>
+    <article class="card">
+        <span><?= $user['nome'] ?></span>
+        <span><?= $user['cpf'] ?></span>
+        <span><?= $user['tel'] ?></span>
+    </article>
     <?php endforeach; ?>
-</table>
+</main>
