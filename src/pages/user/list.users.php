@@ -8,7 +8,7 @@
 
 
 <main class="card-container">
-    <a href="" class="button-create">Adicionar</a>
+    <a href="./create.user.php" class="button-create">Adicionar</a>
     <?php foreach($users as $user): ?>
     <article class="card">
         <div class="info-user">

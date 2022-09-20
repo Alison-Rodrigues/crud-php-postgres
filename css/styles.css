@@ -38,6 +38,8 @@ body {
     grid-template-columns: repeat(3, 1fr) 70px 70px;
     align-items: center;
     justify-content: center;
+    text-transform: uppercase;
+    font-size: 1rem;
 }
 .info-user {
     display: flex;
@@ -63,7 +65,8 @@ body {
     display: flex;
     justify-content: center;
 }
-.button-create {
+.button-create,
+.button-submit {
     background-color: var(--bg-color-button-create);
     padding: 10px 15px;
     color: var(--font-color);
@@ -73,4 +76,42 @@ body {
     border-radius: 5px;
     text-decoration: none;
     margin-bottom: 20px;
+    transition: all .2s;
+}
+.form-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form {
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 300px;
+    background-color: var(--bg-card);
+    padding: 20px;
+    border-radius: 5px;
+}
+.form .input-user {
+    margin-bottom: 15px;
+    outline: none;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #1b263b;
+    background: none;
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    font-size: 1.2rem;
+    color: var(--font-color);
+}
+.button-submit {
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+}
+.button-create:hover,
+.button-submit:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    background-color: #1a8075;
 }
