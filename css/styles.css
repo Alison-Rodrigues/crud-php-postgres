@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --bg-color: #fdfffc;
+    --bg-card: #011627;
+    --font-color: #fdfffc;
+    --bg-color-button-create: #2ec4b6;
+}
+
+body {
+    font-family: 'Roboto', Arial, Helvetica, sans-serif;
+    background-color: var(--bg-color);
+    min-height: 100vh;
+    width: 100%;
+    padding: 20px;
+}
+.card-container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card {
+    background-color: var(--bg-card);
+    color: var(--font-color);
+    width: 80%;
+    padding: 20px;
+    margin: 10px 0;
+    border-radius: 5px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr) 70px 70px;
+    align-items: center;
+    justify-content: center;
+}
+.info-user {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #1b263b;
+    padding: 5px;
+    align-items: center;
+}
+.info-user .header {
+    font-weight: 700;
+    text-transform: uppercase;
+    background-color: #1b263b;
+    place-self: center;
+    margin-bottom: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+.card .icon {
+    width: 30px;
+    
+}
+.card .button {
+    display: flex;
+    justify-content: center;
+}
+.button-create {
+    background-color: var(--bg-color-button-create);
+    padding: 10px 15px;
+    color: var(--font-color);
+    text-transform: uppercase;
+    font-weight: 900;
+    letter-spacing: 5px;
+    border-radius: 5px;
+    text-decoration: none;
+    margin-bottom: 20px;
+}
