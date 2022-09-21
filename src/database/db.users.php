@@ -30,6 +30,21 @@ function deleteUserDb($pdo, $id) {
     $statement -> bindParam(':id', $id, PDO::PARAM_INT);
 
     if($statement->execute()) {
-        echo "Certo";
+        return true;
+    }
+}
+
+function updateUserDb($pdo, $id, $nome, $cpf, $tel) {
+    $sql = "UPDATE users SET nome = :nome, cpf = :cpf, tel = :tel WHERE id = :id";
+
+    $statement = $pdo -> prepare($sql);
+
+    $statement -> bindParam(':nome', $nome, PDO::PARAM_STR);
+    $statement -> bindParam(':cpf', $cpf, PDO::PARAM_STR);
+    $statement -> bindParam(':tel', $tel, PDO::PARAM_STR);
+    $statement -> bindParam(':id', $id, PDO::PARAM_INT);
+
+    if($statement->execute()) {
+        return true;
     }
 }
