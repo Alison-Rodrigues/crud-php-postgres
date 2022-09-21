@@ -21,3 +21,15 @@ function createUserDb($pdo, $nome, $cpf, $tel) {
         ':tel' => $tel,
     ]);
 }
+
+function deleteUserDb($pdo, $id) {
+    $sql = "DELETE FROM users WHERE id = :id";
+
+    $statement = $pdo -> prepare($sql);
+
+    $statement -> bindParam(':id', $id, PDO::PARAM_INT);
+
+    if($statement->execute()) {
+        echo "Certo";
+    }
+}

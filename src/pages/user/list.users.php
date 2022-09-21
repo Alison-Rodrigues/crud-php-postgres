@@ -27,7 +27,7 @@
             <a href=""><img src="/assets/images/botao-editar.png" alt="Ícone de edição" class="icon"></a>
         </div>
         <div class="button">
-            <a href=""><img src="/assets/images/excluir_icon.png" alt="Ícone para excluir" class="icon"></a>
+            <a href="./delete.user.php?id=<?= $user['id']?>"><img src="/assets/images/excluir_icon.png" alt="Ícone para excluir" class="icon"></a>
         </div>
         
         
