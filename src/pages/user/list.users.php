@@ -2,12 +2,17 @@
     require_once './src/pages/partials/header.php';
     require_once './connect.php';
     require_once './src/database/db.users.php';
+    require_once './src/modules/messages.php';
 
     $users = listUsersDb($pdo);
 ?>
 
 
 <main class="card-container">
+    <aside class="message-container">
+        <?php if($_GET['message']) echo(printMessage($_GET['message'])); ?>
+    </aside><!--message-container-->
+    
     <a href="./create.user.php" class="button-create">Adicionar</a>
     <?php foreach($users as $user): ?>
     <article class="card">

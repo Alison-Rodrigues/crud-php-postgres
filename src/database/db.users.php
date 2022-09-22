@@ -15,13 +15,14 @@ function createUserDb($pdo, $nome, $cpf, $tel) {
 
     $statement = $pdo -> prepare($sql);
 
-    $statement->execute([
+    
+
+    $message = $statement->execute([
         ':nome' => $nome,
         ':cpf' => $cpf,
         ':tel' => $tel,
-    ]);
-
-    return header('location: ./list.users.php');
+    ]) ? 'success-create' : 'error-create';
+    return header("location: ./list.users.php?message=$message");
 }
 
 function deleteUserDb($pdo, $id) {
@@ -31,9 +32,8 @@ function deleteUserDb($pdo, $id) {
 
     $statement -> bindParam(':id', $id, PDO::PARAM_INT);
 
-    if($statement->execute()) {
-        return header('location: ./list.users.php');
-    }
+    $message = $statement -> execute() ? 'success-delete' : 'error-delete';
+    return header("location: ./list.users.php?message=$message");
 }
 
 function updateUserDb($pdo, $id, $nome, $cpf, $tel) {
@@ -46,7 +46,6 @@ function updateUserDb($pdo, $id, $nome, $cpf, $tel) {
     $statement -> bindParam(':tel', $tel, PDO::PARAM_STR);
     $statement -> bindParam(':id', $id, PDO::PARAM_INT);
 
-    if($statement->execute()) {
-        return header('location: ./list.users.php');
-    }
+    $message = $statement -> execute() ? 'success-update' : 'error-update';
+    return header("location: ./list.users.php?message=$message");
 }
