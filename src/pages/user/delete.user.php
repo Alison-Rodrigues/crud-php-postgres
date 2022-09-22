@@ -13,11 +13,14 @@
 ?>
 
 <main class="form-container">
-    <form action="./delete.user.php" method="POST" class="form">
+    <form action="./delete.user.php" method="POST" class="form delete">
         <label>Você quer mesmo excluir os dados?</label>
-        <input type="hidden" name="id" value="<?= $idUser ?>">
+        <input type="hidden" name="id" value="<?= $idUser ?>" required>
 
         <button type="submit" class="button-submit">Confirmar</button>
+        <a href="./list.users.php" class="button-cancel">Cancelar</a>
 
     </form>
 </main><!--form-container-->
+
+<?php require_once './src/pages/partials/footer.php' ?>

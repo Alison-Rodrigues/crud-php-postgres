@@ -1,5 +1,6 @@
     <footer class="footer">
-        <h2>Crud - PHP</h2>
+        <h3>Desenvolvido por Alison Rodrigues - 2022</h3>
     </footer>
+    
 </body>
 </html>

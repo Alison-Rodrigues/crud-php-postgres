@@ -34,3 +34,5 @@
     </article><!--card-->
     <?php endforeach; ?>
 </main><!--card-container-->
+
+<?php require_once './src/pages/partials/footer.php' ?>

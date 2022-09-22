@@ -20,6 +20,8 @@ function createUserDb($pdo, $nome, $cpf, $tel) {
         ':cpf' => $cpf,
         ':tel' => $tel,
     ]);
+
+    return header('location: ./list.users.php');
 }
 
 function deleteUserDb($pdo, $id) {
@@ -30,7 +32,7 @@ function deleteUserDb($pdo, $id) {
     $statement -> bindParam(':id', $id, PDO::PARAM_INT);
 
     if($statement->execute()) {
-        return true;
+        return header('location: ./list.users.php');
     }
 }
 
@@ -45,6 +47,6 @@ function updateUserDb($pdo, $id, $nome, $cpf, $tel) {
     $statement -> bindParam(':id', $id, PDO::PARAM_INT);
 
     if($statement->execute()) {
-        return true;
+        return header('location: ./list.users.php');
     }
 }

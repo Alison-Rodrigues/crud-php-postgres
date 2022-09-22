@@ -19,3 +19,5 @@
 
     </form>
 </main><!--form-container-->
+
+<?php require_once './src/pages/partials/footer.php' ?>
