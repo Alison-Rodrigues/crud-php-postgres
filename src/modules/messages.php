@@ -13,10 +13,10 @@
             return '<span class="error-message">Erro ao atualizar os dados.</span>';
         }
         if($message=='success-delete') {
-            return '<span class="success-message">Dados excluídos com sucesso</span>';
+            return '<span class="success-message">Dados excluídos com sucesso.</span>';
         }
         if($message=='error-delete') {
-            return '<span class="error-message">Erro ao excluir os dados</span>';
+            return '<span class="error-message">Erro ao excluir os dados.</span>';
         }
     }
 
