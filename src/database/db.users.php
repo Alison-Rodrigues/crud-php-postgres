@@ -10,6 +10,7 @@ function listUsersDb($pdo) {
     return $users;
 }
 
+
 function createUserDb($pdo, $nome, $cpf, $tel) {
     $sql = "INSERT INTO users (nome, cpf, tel) VALUES (:nome, :cpf, :tel)";
 
