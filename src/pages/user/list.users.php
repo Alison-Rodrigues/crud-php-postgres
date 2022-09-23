@@ -10,7 +10,7 @@
 
 <main class="card-container">
     <aside class="message-container">
-        <?php if($_GET['message']) echo(printMessage($_GET['message'])); ?>
+        <?php if(isset($_GET['message'])) echo(printMessage($_GET['message'])); ?>
     </aside><!--message-container-->
     
     <a href="./create.user.php" class="button-create">Adicionar</a>

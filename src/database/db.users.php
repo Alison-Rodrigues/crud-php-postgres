@@ -24,7 +24,7 @@ function createUserDb($pdo, $nome, $cpf, $tel) {
         ])) {
             $message = 'success-create';
         }
-
+        return header("location: ./list.users.php?message=$message");
         
 
     } catch (\Throwable) {
