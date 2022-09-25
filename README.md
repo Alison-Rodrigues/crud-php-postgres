@@ -19,3 +19,21 @@ $db_password = 'SENHA';
 php -S localhost:8080
 ~~~~
 * Feito isso, acesse o endereço no navegador e prontinho!
+
+---
+### CREATE
+![GIF CREATE](./assets//images/create_AdobeExpress.gif)
+
+### UPDATE
+![GIF UPDATE](./assets/images/update_AdobeExpress.gif)
+
+### DELETE
+![GIF DELETE](./assets/images/delete_AdobeExpress.gif)
+
+---
+## Tecnologias utilizadas
+* PHP
+* HTML5
+* CSS3
+* PostgreSQL
+
