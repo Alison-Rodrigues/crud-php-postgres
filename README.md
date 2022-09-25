@@ -22,13 +22,13 @@ php -S localhost:8080
 
 ---
 ### CREATE
-![GIF CREATE](./assets//images/create_AdobeExpress.gif)
+![GIF CREATE](./assets/images/create_gif.gif)
 
 ### UPDATE
-![GIF UPDATE](./assets/images/update_AdobeExpress.gif)
+![GIF UPDATE](./assets/images/update_gif.gif)
 
 ### DELETE
-![GIF DELETE](./assets/images/delete_AdobeExpress.gif)
+![GIF DELETE](./assets/images/delete_gif.gif)
 
 ---
 ## Tecnologias utilizadas
