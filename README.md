@@ -1,4 +1,5 @@
 # Como rodar a aplicação
+É necessário ter o PostgreSQL e o PHP instalado na máquina.
 
 * Clone o repositório rodando o seguinte comando no terminal
 ~~~
